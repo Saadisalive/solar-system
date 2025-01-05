@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .solarsystem{
+            color: yellow;
+            background:  black;
+            padding: 5px;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="heading">Welcome to our solar system</h1>
+        
+    </header>
+    <p>Our solar system has 8 planets.</p>
+    <script>
+        let div = document.createElement('div');
+        div.id = "paragraph"
+        div.className = "solarsystem"
+        div.innerHTML = "<p>Our solar system is very bueatiful </p>"
+        document.body.append(div)
+
+        let heading = document.getElementById("heading")
+        heading.innerHTML = 'our solar system has very rarest thing called tree.';
+
+        document.querySelector('header p').innerHTML = "<strong>our planet is earth</strong>"
+
+    </script>
+</body>
+</html>
